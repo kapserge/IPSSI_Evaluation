@@ -8,10 +8,11 @@ install: true
 
 before_script: true
 
-script: 
-  - node_modules/.bin/JsHint src/
-  - node_modules/.bin/Retire
-  - node_modules/.bin/Twly
+script: true
+  #- node_modules/.bin/JsHint src/
+  #- node_modules/.bin/Retire
+  #- node_modules/.bin/Twly
+  
 
 after_script: true
 
