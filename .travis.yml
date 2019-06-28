@@ -1,17 +1,14 @@
 language: node_js
 node_js:
-  - 0.10
-install:
-  - travis_retry yarn install
+  - '12'
+cache: npm
+before_install: 
+     npm install
+install: true
 
-script:
-  - node --version
-  - npm --version
-  - yarn --version
-  - npm test
+before_script: true
 
-deploy:
-  provider: script
-  skip_cleanup: true
-  script:
-    - npm install -g travis-deploy-once semantic-release && travis-deploy-once "semantic-release"
+script: 
+    
+
+after_script: true
