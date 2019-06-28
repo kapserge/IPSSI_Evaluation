@@ -15,7 +15,3 @@ deploy:
   skip_cleanup: true
   script:
     - npm install -g travis-deploy-once semantic-release && travis-deploy-once "semantic-release"
-
-branches:
-  except:
-- /^v\d+\.\d+\.\d+$/
