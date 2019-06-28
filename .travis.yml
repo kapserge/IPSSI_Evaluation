@@ -8,12 +8,15 @@ install: true
 
 before_script: true
 
-script: true 
-    
+script: 
+  - ./node_modules/.bin/JsHint scr/
+  - ./node_modules/.bin/Retire
+  - ./node_modules/.bin/Twly
+
 after_script: true
 
 deploy:
   provider: heroku
   api_key:
     secure: "4c6a4f00-1036-49c2-a736-0c7cbb927576" # vu avec laurent
-  app: IPSSI_Evaluation   
+  app: ip-evaluation
